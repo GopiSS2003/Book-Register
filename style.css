@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.-V-sQ--jzR8zQmW9z8pJzgHaFx?pid=Api&rs=1&c=1&qlt=95&w=158&h=123);
+    background-repeat: repeat;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    margin: 100px auto; /* Centered horizontally */
+    height: 400px;
+    width: 50%;
+    min-width: 350px; /* Prevents it from getting too small */
+    border-radius: 10px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(150, 145, 145, 0.8), rgba(179, 172, 172, 0.8)), url(https://tse1.mm.bing.net/th/id/OIP.s6qkxOqsGKB_7JnvbKujWAHaE2?pid=Api&rs=1&c=1&qlt=95&w=156&h=102);
+    background-size: cover;
+    text-align: center;
+}
+
+label {
+    font-size: x-large;
+    color: #070707;
+    display: block; /* Makes label take its own line */
+    margin-bottom: 5px;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 10px; /* Reduced margin */
+    font-size: large;
+}
+
+.child {
+    margin-bottom: 20px;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+#addbook {
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px; /* Reduced margin */
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: large;
+    transition: background-color 0.3s ease;
+}
+
+#addbook:hover {
+    background-color: darkgreen;
+}
+
+/* Popup Styles */
+.popup {
+    width: 400px;
+    max-width: 90%; /* Prevents overflow on small screens */
+    background-color: rgb(241, 239, 239);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Corrected for centering */
+    transform: translate(-50%, -50%) scale(0.7);
+    text-align: center;
+    padding: 30px;
+    color: rgb(87, 18, 199);
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup #id {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(9, 240, 20);
+    cursor: pointer;
+    font-size: x-large;
+    color: aliceblue;
+    transition: background-color 0.3s ease;
+}
+
+#id:hover {
+    background-color: rgb(67, 168, 67);
+}
+
+h2 {
+    text-align: center;
+    color: #ecdcdc;
+    margin-bottom: 20px;
+}
+
+/* Style for book items and delete button */
+#list5 {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#list5 li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* This style now only applies to delete buttons inside the list */
+#list5 button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#list5 button:hover {
+    background-color: darkred;
+}
+
+
+/* --- Media Query for Mobile Devices --- */
+/* This applies only when the screen width is 768px or less */
+
+@media (max-width: 768px) {
+    .container {
+        margin: 50px 5%;
+        width: 90%;
+        height: auto; /* Allow height to adjust */
+        min-width: unset; /* Remove min-width */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .child {
+        font-size: large;
+    }
+
+    label {
+        font-size: large;
+    }
+
+    input {
+        width: 90%;
+        font-size: medium;
+    }
+
+    #addbook {
+        width: 60%;
+        font-size: medium;
+    }
+
+    .popup h3 {
+        font-size: x-large;
+    }
+
+    #list5 {
+        font-size: medium;
+    }
+}

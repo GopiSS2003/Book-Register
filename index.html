@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      
+      <h2 >BOOK MANAGER</h2>
+      
+        <div class="child">
+        <label for="">book  title</label> 
+        <input type="text" id="titleInput" placeholder="BOOK TITLE">
+        </div>
+        <div class="child">
+        <label for="">author name</label>
+        <input type="text" id="authorInput" placeholder="AUTHOR NAME ">
+        </div>
+        <div class="children">
+            <button id="addbook" onclick="openPopup()" type="submit">add book</button>
+        </div>
+    </div>
+        <div class="popup" id="popup" >
+            <h3 style="font-size: xx-large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 800;color: #111011;">Book List</h3>
+            <div id="list5" style="font-size: large;">
+
+            </div>
+            <button onclick="closePopup()" id="id"type="submit">ok</button>
+
+        </div>
+        
+      
+  
+    <script src="app.js">
+    </script>
+</body>
+</html>
