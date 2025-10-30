@@ -33,8 +33,3 @@ A beautiful, modern web application for managing your personal book collection w
 - **Font Awesome** - Beautiful icons
 - **Google Fonts** - Typography
 
-## 📦 Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/book-manager-pro.git
